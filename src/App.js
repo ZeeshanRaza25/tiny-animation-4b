@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import MyHeader from './components/header';
+import { Row, Col, Layout } from 'antd';
+import Home from './components/Home';
+import Services from './components/Services';
+import About from './components/About';
+// import Samples from './components/Samples';
 
 function App() {
+  const { Content } = Layout;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <MyHeader />
+        <Content>
+          <Row>
+            <Col span={24} style={{
+              backgroundImage:
+                // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
+                'linear-gradient(90deg, rgba(75,6,193,1) 0%, rgba(206,2,189,1) 100%)',
+              height: '3vh'
+            }}></Col>
+          </Row>
+          <Home />
+          <Services />
+          <About />
+          {/* <Samples /> */}
+        </Content>
+        {/* <Footer>Footer</Footer> */}
+      </Layout>
+    </>
   );
 }
 
