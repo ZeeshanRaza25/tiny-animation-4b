@@ -8,10 +8,10 @@ const Services = () => {
     <>
       <Row justify="space-around" style={{
         backgroundImage:
-          // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
           'linear-gradient(90deg, rgba(206,2,189,1) 0%, rgba(75,6,193,1) 100%)',
-        height: '120vh',
-        paddingTop: '20vh'
+        // height: '120vh',
+        paddingTop: '15vh',
+        paddingBottom: '15vh',
       }}>
         <Col xs={24} sm={12} style={{
           paddingTop: '3vh'
@@ -88,7 +88,9 @@ const Services = () => {
         backgroundImage:
           // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
           'linear-gradient(90deg, rgba(206,2,189,1) 0%, rgba(75,6,193,1) 100%)',
-        height: '100vh',
+        // height: '100vh',
+        paddingTop: '15vh',
+        paddingBottom: '15vh',
       }}>
         <Col xs={24} sm={12}>
           <div>
@@ -165,8 +167,10 @@ const Services = () => {
         backgroundImage:
           // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
           'linear-gradient(90deg, rgba(206,2,189,1) 0%, rgba(75,6,193,1) 100%)',
-        height: '100vh',
+        // height: '100vh',
         textAlign: 'left',
+        paddingTop: '15vh',
+        paddingBottom: '15vh',
         // paddingTop: '5vh'
       }}>
         <Col xs={24} sm={12} style={{
@@ -181,13 +185,16 @@ const Services = () => {
           }} src="https://www.cortexcopywriter.com/img/services/services-5.svg" alt="bottom-svg" />
         </Col>
         <Col xs={24} sm={12}>
-          {/* <div> */}
+          <div style={{
+            paddingBottom: '10vh',
+            paddingTop: '10vh'
+          }}>
             <h1 style={{
               fontSize: '50px',
               fontWeight: '500',
               color: 'white',
               paddingLeft: '50px',
-              paddingTop: '7vh'
+              // marginTop: '10vh'
             }}>
               Content Writing
             </h1>
@@ -238,7 +245,7 @@ const Services = () => {
                   })
               }
             </div> */}
-          {/* </div> */}
+          </div>
         </Col>
       </Row>
     </>

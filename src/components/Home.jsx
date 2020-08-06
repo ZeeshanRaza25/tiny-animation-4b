@@ -8,7 +8,7 @@ const Home = () => {
       backgroundImage:
         // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
         'linear-gradient(90deg, rgba(75,6,193,1) 0%, rgba(206,2,189,1) 100%)',
-      height: '130vh',
+      // height: '130vh',
       textAlign: 'left',
     }}>
       <Col sm={1}></Col>
@@ -17,7 +17,7 @@ const Home = () => {
           fontSize: '50px',
           fontWeight: '500',
           color: 'white',
-          paddingTop: '20vh'
+          paddingTop: '20vh',
         }}>
           CORTEX
         {`\n`}
@@ -49,20 +49,19 @@ const Home = () => {
           fontSize: '19px',
           marginTop: '12%',
           // marginLeft: '10%'
-          
+
         }}>
           Send a message
       </Title>
       </Col>
       <Col xs={24} sm={14}>
-        {/* <img src="https://www.cortexcopywriter.com/img/intro/Intro_Front_Layer.svg" alt="middle" /> */}
         <img style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           width: '100%',
           height: '90%',
-          paddingBottom: '15vh'
+          paddingBottom: '10vh'
         }} src="https://www.cortexcopywriter.com/img/intro/Intro_Featured_Image_Empty.svg" alt="bottom-svg" />
       </Col>
     </Row>

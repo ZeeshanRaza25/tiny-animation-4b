@@ -8,9 +8,8 @@ const About = () => {
   return (
     <Row justify="space-around" style={{
       backgroundImage:
-        // 'linear-gradient(to top, #580192 0%, #5C1094 100%)',
         'linear-gradient(to right, #860091, #662975)',
-      height: '130vh',
+      // height: '130vh',
       paddingTop: '15vh'
     }}>
       <Col xs={24} sm={12} style={{
@@ -24,9 +23,7 @@ const About = () => {
         // marginTop: '50px',
         textAlign: 'center',
       }}>
-        {/* <img src="https://www.cortexcopywriter.com/img/intro/Intro_Front_Layer.svg" alt="middle" /> */}
-        {/* <img width="100%" src="https://www.cortexcopywriter.com/img/services/services-5.svg" alt="bottom-svg" /> */}
-        <img sizes={250} src={Aboutimg} alt="about" />
+        <img sizes={225} src={Aboutimg} alt="about" />
         <br />
         <p style={{
           color: 'white',
@@ -34,7 +31,7 @@ const About = () => {
           fontSize: '15px',
           marginBottom: '20px',
           fontWeight: '200',
-        }}><strong>Nathan Mudaliar</strong><i>, the Cortex Copywriter</i></p>
+        }}><strong>Zeeshan Raza</strong><i>, the Cortex Copywriter</i></p>
       </Col>
       <Col xs={24} sm={12} style={{
         // marginTop: '60px',
