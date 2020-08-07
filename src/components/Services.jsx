@@ -1,8 +1,43 @@
 import React from 'react'
 import { Typography, Row, Col } from 'antd';
+import useWebAnimations from "@wellyshen/use-web-animations";
 
 const Services = () => {
   const { Paragraph } = Typography;
+
+  const serviceA = useWebAnimations({
+    keyframes: {
+      transform: "translatex(35px)"
+    },
+    timing: {
+      duration: 2000,
+      iterations: Infinity,
+      direction: "alternate",
+      easing: "ease-in-out",
+    },
+  });
+  const serviceB = useWebAnimations({
+    keyframes: {
+      transform: "translatex(35px)"
+    },
+    timing: {
+      duration: 2000,
+      iterations: Infinity,
+      direction: "alternate",
+      easing: "ease-in-out",
+    },
+  });
+  const serviceC = useWebAnimations({
+    keyframes: {
+      transform: "translatex(35px)"
+    },
+    timing: {
+      duration: 2000,
+      iterations: Infinity,
+      direction: "alternate",
+      easing: "ease-in-out",
+    },
+  });
 
   return (
     <>
@@ -17,7 +52,7 @@ const Services = () => {
           paddingTop: '3vh'
         }}>
           {/* <img src="https://www.cortexcopywriter.com/img/intro/Intro_Front_Layer.svg" alt="middle" /> */}
-          <img style={{
+          <img ref={serviceA.ref} style={{
             display: 'block',
             marginLeft: 'auto',
             marginRight: 'auto',
@@ -51,42 +86,11 @@ const Services = () => {
               whether that's completing a form or tapping a button. This includes every type of content from
               on-screen help systems, user onboarding and in-app messages to push notifications and tooltips.
     </Paragraph>
-            {/* <div style={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            paddingLeft: '60px',
-            color: 'white',
-            lineHeight: '24px',
-            fontSize: '18px',
-          }}>
-            {
-              ['Microcopy',
-                'Taxonomy & Labeling',
-                'Chatbots',
-                'User Research',
-                'Content Style Guide',
-                'User Testing',
-                'Design Principles',
-                'Prototype'].map(item => {
-                  return <ul key={item}
-                  //  style={{
-                  //   padding: '8px',
-                  //   margin: '2px'
-                  // }}
-                  >
-                    • {item}
-                  </ul>
-                })
-            }
-          </div> */}
           </div>
         </Col>
       </Row>
       <Row justify="space-around" style={{
         backgroundImage:
-          // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
           'linear-gradient(90deg, rgba(206,2,189,1) 0%, rgba(75,6,193,1) 100%)',
         // height: '100vh',
         paddingTop: '15vh',
@@ -119,43 +123,12 @@ const Services = () => {
               Carefully considered writing and SEO best practices allow me to craft the perfect user journey online. Let me draw
               the map that guides users every step of the way from discovery, to consideration, to conversion.
       </Paragraph>
-            {/* <div style={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            paddingLeft: '60px',
-            color: 'white',
-            lineHeight: '24px',
-            fontSize: '18px',
-          }}>
-            {
-              ['Information Architecture',
-                'Wireframes',
-                'Competitor Analysis',
-                'On-page SEO',
-                'Off-page SEO',
-                'USP/UVP',
-                'Landing Page',
-                'Sales Letter'].map(item => {
-                  return <ul key={item}
-                    // style={{
-                    //   padding: 'px',
-                    //   margin: '2px'
-                    // }}
-                  >
-                    • {item}
-                  </ul>
-                })
-            }
-          </div> */}
           </div>
         </Col>
         <Col xs={24} sm={12} style={{
           paddingTop: '3vh'
         }}>
-          {/* <img src="https://www.cortexcopywriter.com/img/intro/Intro_Front_Layer.svg" alt="middle" /> */}
-          <img style={{
+          <img ref={serviceB.ref} style={{
             display: 'block',
             marginLeft: 'auto',
             marginRight: 'auto',
@@ -165,7 +138,6 @@ const Services = () => {
       </Row>
       <Row justify="space-around" style={{
         backgroundImage:
-          // 'linear-gradient(-225deg, #321575 0%, #8D0B93 50%, #FF057C 100%)',
           'linear-gradient(90deg, rgba(206,2,189,1) 0%, rgba(75,6,193,1) 100%)',
         // height: '100vh',
         textAlign: 'left',
@@ -176,8 +148,7 @@ const Services = () => {
         <Col xs={24} sm={12} style={{
           paddingTop: '8vh'
         }}>
-          {/* <img src="https://www.cortexcopywriter.com/img/intro/Intro_Front_Layer.svg" alt="middle" /> */}
-          <img style={{
+          <img ref={serviceC.ref} style={{
             display: 'block',
             marginLeft: 'auto',
             marginRight: 'auto',
@@ -213,38 +184,11 @@ const Services = () => {
               marginInlineStart: '0px',
               marginInlineEnd: '0px',
               lineHeight: '1'
-            }} >Give your business a competitive edge with powerful content that can be targeted to any segment of your audience.
+            }}>
+              Give your business a competitive edge with powerful content that can be targeted to any segment of your audience.
               No matter how large or complex your project, my custom-built solutions including articles, eDMs, and case studies
               will help you implement a plan that maximizes your business’s online exposure.
-              </Paragraph>
-            {/* <div style={{
-              width: '100%',
-              display: 'flex',
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              paddingLeft: '60px',
-              color: 'white',
-              lineHeight: '24px',
-              fontSize: '18px',
-            }}>
-              {
-                ['Headlines & Taglines',
-                  'Content Strategy',
-                  'Blogs & Articles',
-                  'Social Media Content',
-                  'Video Scripts',
-                  'eDMs & Newsletters',
-                  'Case Studies',
-                  'Whitepapers'].map(item => {
-                    return <ul key={item} style={{
-                      padding: '8px',
-                      margin: '2px'
-                    }}>
-                      • {item}
-                    </ul>
-                  })
-              }
-            </div> */}
+            </Paragraph>
           </div>
         </Col>
       </Row>

@@ -59,7 +59,18 @@ const data1 = [
 const Samples = () => {
   const { Meta } = Card;
   const { Title } = Typography;
+  // const [hover, setHover] = useState(false);
 
+  // let linkStyle;
+
+  // if (hover) {
+  //   linkStyle = { transform: 'scale(1.05)' }
+  // } else {
+  //   linkStyle = {
+  //     transition: 'transform 1s',
+  //     margin: '25px',
+  //   }
+  // }
   return (
     <div style={{
       backgroundImage:
@@ -116,8 +127,12 @@ const Samples = () => {
         {data.map(item => {
           return <Col key={item.title} xs={22} sm={7}>
             <Card
-              hoverable
-              style={{ margin: '25px' }}
+              // onMouseEnter={() => setHover(true)}
+              // onMouseLeave={() => setHover(false)}
+              // style={linkStyle}
+              style={{
+                margin: '25px'
+              }}
               cover={<img alt={item.alt} height="100%" src={item.scr} />}
             >
               <Meta title={item.title} description={item.desc} />
@@ -152,8 +167,14 @@ const Samples = () => {
         {data1.map(item => {
           return <Col key={item.title} xs={20} sm={7}>
             <Card
+              // onMouseEnter={() => setHover(true)}
+              // onMouseLeave={() => setHover(false)}
+              // style={linkStyle}
+              style={{
+                margin: '25px'
+              }}
               hoverable
-              style={{ width: 320, marginTop: '25px' }}
+              // style={{ width: 320, marginTop: '25px' }}
               cover={<img alt={item.alt} height="100%" src={item.scr} />}
             >
               <Meta title={item.title} description={item.desc} />
@@ -161,7 +182,7 @@ const Samples = () => {
           </Col>
         })}
       </Row>
-    </div>
+    </div >
   )
 }
 

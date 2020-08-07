@@ -39,23 +39,21 @@ const About = () => {
         // marginTop: '50px',
         // paddingTop: '20vh',
       }}>
-        <Title level={2} style={{
-          width: '150px',
-          height: '50px',
-          borderColor: '#5C1094',
-          // padding: '10px',
-          background: `var(--gradient_5)`,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          cursor: 'pointer',
-          transition: '0.2s',
-          backgroundImage: 'linear-gradient(-20deg, #5C1094 0%, #5C1094 100%)',
-          fontWeight: 'normal',
-          fontSize: '22px',
-          color: 'white',
-          // paddingBottom: '5px'
-        }}>
+        <Title level={1}
+          style={{
+            width: '150px',
+            height: '50px',
+            borderColor: '#5C1094',
+            // padding: '10px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundImage: 'linear-gradient(-20deg, #5C1094 0%, #5C1094 100%)',
+            // fontWeight: 'normal',
+            fontSize: '22px',
+            color: 'white',
+            textAlign: 'center',
+          }}>
           About
           </Title>
         <Paragraph style={{
