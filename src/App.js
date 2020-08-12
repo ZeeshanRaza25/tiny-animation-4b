@@ -23,7 +23,7 @@ function App() {
         </Content>
         <Footer style={{
           backgroundImage: 'linear-gradient(90deg, rgba(88,21,164,100) 0%, rgba(88,21,164,100) 100%)',
-          height: '40vh',
+          height: '15%',
         }}>
           <FooterComponent />
         </Footer>

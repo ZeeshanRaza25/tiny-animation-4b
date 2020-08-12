@@ -26,7 +26,7 @@ const Home = () => {
           fontSize: '50px',
           fontWeight: '500',
           color: 'white',
-          paddingTop: '30vh',
+          paddingTop: '25%',
         }}>
           CORTEX
         {`\n`}
@@ -58,11 +58,7 @@ const Home = () => {
           Send a message
       </Title>
       </Col>
-      <Col xs={24} sm={14} style={{
-        // backgroundColor: 'black',
-        // height: '90vh',
-        // paddingBottom: '70vh'
-      }}>
+      <Col xs={24} sm={14}>
         <div style={{ position: 'relative', textAlign: 'center' }}>
           <img ref={ref} style={{
             height: '50%',
